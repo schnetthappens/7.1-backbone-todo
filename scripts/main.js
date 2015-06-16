@@ -8,10 +8,11 @@ import TaskListView from './views/taskListView';
   $(document).ready(function(){
     var tasks = new TasksCollection();
     tasks.fetch().then(function(){
-      console.log(tasks);
 
-      // var taskList = new TaskListView();
-      // $('#main').html(taskList.el);
+      var taskList = new TaskListView({collection: tasks});
+      $('#main').html(taskList.el);
+
+      // console.log(tasks);
 
     });
   });
