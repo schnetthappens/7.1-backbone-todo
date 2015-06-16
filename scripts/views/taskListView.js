@@ -3,7 +3,7 @@ export default Backbone.View.extend({
   template: JST.todo,
 
   tagName: 'ul',
-  className: 'todo-list',
+  id: 'todo-list',
 
   initialize:function(){
     this.render();
