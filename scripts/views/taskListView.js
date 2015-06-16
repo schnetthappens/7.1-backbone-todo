@@ -1,6 +1,6 @@
 
 export default Backbone.View.extend({
-  template: JST.todo,
+  template: JST['task-list'],
 
   tagName: 'ul',
   id: 'todo-list',
