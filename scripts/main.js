@@ -1,7 +1,12 @@
+
+import TaskListView from './views/taskListView';
+
 (function(){
   'use strict';
 
   $(document).ready(function(){
-    $('#main').prepend(JST.todo());
+    var taskListView = new TaskListView();
+    $('#main').html(taskListView.el);
+
   });
 })();
