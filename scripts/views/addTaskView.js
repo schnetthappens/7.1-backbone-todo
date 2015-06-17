@@ -1,6 +1,8 @@
 
 export default Backbone.View.extend({
   template: JST['add-task'],
+  tagName: 'header',
+  id: 'header',
 
 
   initialize: function(){

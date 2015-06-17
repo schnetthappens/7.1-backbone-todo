@@ -17,7 +17,7 @@ import AddTaskView from './views/addTaskView';
     });
 
     var addTask = new AddTaskView({collection: tasks});
-    $('#header').append(addTask.el);
+    $('#todoapp').prepend(addTask.el);
 
   });
 })();
