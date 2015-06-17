@@ -1,0 +1,25 @@
+[{
+  "title": "Answer email",
+  "isComplete": false
+  },
+
+  {
+  "title": "Finish homework",
+  "isComplete": false
+  },
+
+  {
+  "title": "Schedule meetings",
+  "isComplete": true
+  },
+
+  {
+  "title": "Grocery shopping",
+  "isComplete": false
+  },
+
+  {
+  "title": "Workout",
+  "isComplete": false
+
+}]

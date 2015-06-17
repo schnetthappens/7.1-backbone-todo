@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title></title>
+    <title>7.1 Backbone TODO</title>
 
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
 
@@ -15,10 +15,46 @@
   </head>
   <body>
 
+    <section id="todoapp">
+      
+
+      <section id="main">
+
+      </section>
+
+
+      <footer id="footer">
+        <span id="todo-count">
+          <strong>2</strong> todos left
+        </span>
+        <ul id="filters">
+          <li>
+            <a href="all" class="selected">All</a>
+          </li>
+          <li>
+            <a href="active">Active</a>
+          </li>
+          <li>
+            <a href="completed">Completed</a>
+          </li>
+        </ul>
+
+        <button id="clear-completed">
+          Clear completed (1)
+        </button>
+      </footer>
+    </section>
+
+    <footer id="info">
+      <p>Double-click to edit a todo</p>
+    </footer>
+  </body>
+
   <!-- Third Party Scripts -->
   <script src="bower_components/commonjs-require/commonjs-require.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
   <script src="bower_components/handlebars/handlebars.js"></script>
 
   <!-- Application Scripts -->
