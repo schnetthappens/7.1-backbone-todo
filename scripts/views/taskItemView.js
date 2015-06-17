@@ -18,7 +18,7 @@ export default Backbone.View.extend({
   },
 
   markComplete: function(){
-    this.$el.addClass('completed');
+    this.$el.toggleClass('completed');
   }
 
 
