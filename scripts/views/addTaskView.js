@@ -23,13 +23,20 @@ export default Backbone.View.extend({
     var taskInput = this.$('#new-todo').val();
     var taskName = taskInput;
 
-    if (e.keyCode === 13) {
-      // console.log(taskName);
-
-      if (taskInput === '') {
-        alert('Uh oh! You forgot to enter a task!');
-      }
+    //when 'Enter' key is pressed & input is NOT empty
+    if (e.keyCode === 13 && taskInput !== '') {
+      this.collection.create({
+        title: taskName,
+        isComplete: false
+      });
     }
+
+    //when 'Enter' key is pressed & input IS empty
+    if (e.keyCode === 13 && taskInput === '') {
+      alert('Uh oh! You forgot to enter a task!');
+    }
+
+
   }
 
 
