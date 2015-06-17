@@ -4,7 +4,8 @@ export default Backbone.View.extend({
   tagName: 'li',
 
   events: {
-    'click .toggle': 'markComplete'
+    'click .toggle': 'markComplete',
+    'click .destroy': 'destroy'
   },
 
 
@@ -19,6 +20,12 @@ export default Backbone.View.extend({
 
   markComplete: function(){
     this.$el.toggleClass('completed');
+  },
+
+  destroy: function(){
+    this.model.destroy();
+
+
   }
 
 
