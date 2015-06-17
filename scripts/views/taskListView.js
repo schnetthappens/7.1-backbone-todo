@@ -23,7 +23,7 @@ export default Backbone.View.extend({
       var view = new TaskItemView({
         model: child
       });
-      this.$el.append(view.el);
+      this.$el.prepend(view.el);
       return view;
     }.bind(this));
 

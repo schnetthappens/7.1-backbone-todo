@@ -29,6 +29,7 @@ export default Backbone.View.extend({
         title: taskName,
         isComplete: false
       });
+      this.render();
     }
 
     //when 'Enter' key is pressed & input IS empty
